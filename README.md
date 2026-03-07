@@ -9,4 +9,7 @@ While similar methods like Selective QloRA already exist, I am implementing this
 To ensure full transparency and rigous tracking, all experimental results, including loss curves and performance metrics, will be recorded and reported through the wandb irl. 
 
 
+The filtered dataset (top 30% highest perplexity samples from OpenHermes 2.5) is publicly available on Hugging Face: [https://huggingface.co/datasets/Malum0x/openhermes2.5-Perplexity_filtered_top30]
+
+
 tbc... 
