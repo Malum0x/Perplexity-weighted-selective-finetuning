@@ -19,7 +19,7 @@ metrics, were tracked through W&B.
 
 The filtered dataset (top 30% highest perplexity samples from
 OpenHermes 2.5) is publicly available on Hugging Face:
-https://huggingface.co/datasets/Malum0x/openhermes2.5-Perplexity_filtered_top30
+https://huggingface.co/datasets/Osye/openhermes2.5-Perplexity_filtered_top30
 
 ## Results — original (with chat template)
 
@@ -66,7 +66,7 @@ mlp-surgery uses:
 So in this setup the dataset filtering did not help. The experiment
 did establish that fine-tuning on conversational data damages parts
 of the base model's capability — and that observation is what set up
-the follow-up project, [mlp-surgery](https://github.com/Malum0x/mlp-surgery),
+the follow-up project, [mlp-surgery](https://github.com/Osyeyy/mlp-surgery),
 which diagnoses which layers get damaged and shows that simple weight
 restoration recovers them (top-30 restoration crosses base on GSM8K).
 
@@ -85,5 +85,5 @@ they don't.
 
 ## Related
 
-- Follow-up project: [mlp-surgery](https://github.com/Malum0x/mlp-surgery) — gradient-norm-based MLP layer restoration. Shows top-30 restoration recovers GSM8K above base (+1.14 in re-run, +1.44 original) without retraining.
-- Filtered dataset: https://huggingface.co/datasets/Malum0x/openhermes2.5-Perplexity_filtered_top30
+- Follow-up project: [mlp-surgery](https://github.com/Osyeyy/mlp-surgery) — gradient-norm-based MLP layer restoration. Shows top-30 restoration recovers GSM8K above base (+1.14 in re-run, +1.44 original) without retraining.
+- Filtered dataset: https://huggingface.co/datasets/Osye/openhermes2.5-Perplexity_filtered_top30
